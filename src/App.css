@@ -12,3 +12,8 @@
 .colorBackground{
     background-color: #4d3420;
 }
+.bannerimg{
+    height: 440px;
+    width: 100%;
+    object-fit: cover;
+}

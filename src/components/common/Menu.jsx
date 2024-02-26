@@ -13,7 +13,7 @@ const Menu = () => {
       <Nav className="ms-auto">
         <Nav.Link href="#home">Inicio</Nav.Link>
         <Nav.Link href="#link">Recetas</Nav.Link>
-        <Nav.Link href="#link">Administrador</Nav.Link>
+        <Nav.Link href="#link">Agregar/editar</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
