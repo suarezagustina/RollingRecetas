@@ -48,7 +48,7 @@ const traerecetas = async()=>{
   </thead>
   <tbody>
   {
-    recetas.map((receta)=><ItemRecetas key={receta} receta={receta}></ItemRecetas>)
+    recetas.map((receta)=><ItemRecetas key={receta} receta={receta} setrecetas={setrecetas}></ItemRecetas>)
   }
   </tbody>
 </Table>

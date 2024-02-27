@@ -1,18 +1,6 @@
 {
   "recetas": [
     {
-      "id": "1",
-      "recetaTitulo": "Chocotorta",
-      "tiempo": "30 minutos",
-      "comensales": 10,
-      "email": "persona1@gmail.com",
-      "acercaDeLaReceta": "La cocino siempre para mis hijos y disfrutamos en familia",
-      "descripcionBreve": "Postre clasico, sencillo y delicioso!",
-      "imagen": "https://i.pinimg.com/originals/95/3d/7d/953d7d917d53244f867db1e4991c2ec9.jpg",
-      "ingredientes": "2 paquetes de galletas de chocolate Chocolinas, 600 gramos de queso mascarpone, 600 g. de dulce de leche, 2 cucharadas de café soluble, 200 ml. de agua caliente, 100 g. de chocolate para decorar",
-      "intrucciones": "En un bowl mezclar el dulce de leche y el queso blanco hasta lograr una mezcla homogénea. En una fuente, preparar un café bien fuerte. Ir mojando las galletitas de chocolate una a la vez y disponerlas en un molde. Cubrir con una capa de la preparación dulce de leche y queso blanco. Seguir haciendo capas de galletitas hasta que no quede lugar en el molde. Llevar a la heladera durante por lo menos 4 horas."
-    },
-    {
       "id": "2",
       "recetaTitulo": "Chocotorta",
       "tiempo": "30 minutos",
@@ -47,18 +35,6 @@
       "descripcionBreve": "La opción casera y mas rápida para disfrutar en familia",
       "ingredientes": "Fresa 250 g. Nata líquida 100 ml. Azúcar 50 g",
       "instrucciones": "Ponemos todos los ingredientes en un vaso de batidor de brazo o en un robot de cocina y trituramos todo a velocidad alta durante un minuto y servimos. Si queremos, podemos montar aparte un poco de nata líquida con unas varillas para decorar. En ese caso solo habrá que montar y colocar sobre el batido."
-    },
-    {
-      "id": "8b5b",
-      "recetaTitulo": "Medialunas caseras fáciles",
-      "imagen": "https://estag.fimagenes.com/imagenesred/5107787.jpg",
-      "acercaDeLaReceta": "Nunca me anime a trabajar con masas con levadura pero con la ayuda de mi novio hicimos estas medialunas especiales para un día de lluvia",
-      "email": "",
-      "comensales": "5",
-      "tiempo": "+60 minutos",
-      "descripcionBreve": "Estos suaves y dulces croissants son apreciados por su forma característica de media luna y su sabor irresistible.",
-      "ingredientes": "1 kg harina. 200 grs manteca. 25 grs levadura fresca o 10 grs de levadura seca (un sobre). 400 cc leche (aproximadamente, puede ser un poco menos dependiendo de la harina). 180 grs azúcar. 1 huevo. 1 cda. esencia de vainilla. 1 pizca sal. Ralladura de medio limón",
-      "instrucciones": "En un recipiente grande, tamizamos la harina y la colocamos en un bol. Hacemos un hueco en el centro, formando un volcán. En otro recipiente, calentamos la leche hasta que esté tibia. Agregamos la levadura fresca y el azúcar, removiendo suavemente hasta que se disuelvan por completo. Vertemos la mezcla de leche, levadura y azúcar en el centro del volcán de harina. Añadimos los huevos ligeramente batidos y la sal. Comenzamos a mezclar los ingredientes desde el centro hacia afuera, incorporando gradualmente la harina hasta formar una masa homogénea. Colocamos la masa en una superficie enharinada y amasamos durante aproximadamente 10 minutos, hasta obtener una masa elástica y suave al tacto. Dividimos la masa en dos partes iguales y formamos dos bolas. Cubrimos con un paño húmedo y dejamos reposar durante 15 minutos. Estiramos cada bola de masa en forma de círculo, utilizando un palote enharinado. La masa debe tener un espesor de aproximadamente medio centímetro. Untamos la superficie de cada círculo de masa con la manteca derretida. Luego, doblamos cada círculo por la mitad y volvemos a doblarlo en forma de triángulo. Las acomodamos en una bandeja para horno previamente engrasada o cubierta con papel manteca. Dejamos que leuden durante unos 30 minutos en un lugar cálido, hasta que dupliquen su tamaño. Precalentamos el horno a 180 grados centígrados. Horneamos las medialunas durante aproximadamente 20 minutos o hasta que estén doradas y ligeramente infladas. Mientras tanto, preparamos el almíbar, en una cacerola colocamos el agua y azúcar y dejamos que se cocine 3 minutos hasta que espese. Retiramos del horno y las dejamos enfriar en una rejilla. Cuando estén frías las pintamos con el almíbar, así obtendrá un color dorado brillante. ¡Buen provecho!"
     }
   ]
 }
