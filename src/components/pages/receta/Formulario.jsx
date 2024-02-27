@@ -1,9 +1,9 @@
 import { Container, Form, Button, FormControl } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { crearecetaAPI, obtenerRecetaAPI } from "../../../helpers/queries";
+import { crearecetaAPI, editarRecetaAPI, obtenerRecetaAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 
 const Formulario = ({editar, titulo}) => {
   const {
@@ -14,6 +14,7 @@ const Formulario = ({editar, titulo}) => {
     setValue
   } = useForm();
   const {id} = useParams();
+  const navegacion = useNavigate()
 
   useEffect(()=>{
     if(editar){
@@ -48,6 +49,22 @@ const Formulario = ({editar, titulo}) => {
   const onSubmit = async(receta) => {
     if(editar){
       //editar producto 
+    const respuesta = await editarRecetaAPI(id, receta)
+    if(respuesta.status === 200){
+      Swal.fire({
+        title: "Receta editada!",
+        text:  `La Receta: ${receta.recetaTitulo} fue editada correctamente `,
+        icon: "success"
+      });
+    navegacion("/creador")
+    }else{
+      Swal.fire({
+        title: "Ocurrio un error",
+        text:  "Lo siento!. Ocurrio un error, intenta editar la receta en otro momento",
+        icon: "error"
+      });
+    }
+
     }else{
     //  console.log(receta);
       //CREAR

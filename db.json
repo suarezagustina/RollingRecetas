@@ -13,7 +13,6 @@
       "intrucciones": "En un bowl mezclar el dulce de leche y el queso blanco hasta lograr una mezcla homogénea. En una fuente, preparar un café bien fuerte. Ir mojando las galletitas de chocolate una a la vez y disponerlas en un molde. Cubrir con una capa de la preparación dulce de leche y queso blanco. Seguir haciendo capas de galletitas hasta que no quede lugar en el molde. Llevar a la heladera durante por lo menos 4 horas."
     },
     {
-      "id": "b51e",
       "recetaTitulo": "Batido de Oreo",
       "imagen": "https://bing.com/th?id=OSK.ee7f6ee820b8937b83062541328661d7",
       "acercaDeLaReceta": "Este batido de Oreo no tiene rival. Incluso se permite competir con el batido de chocolate, que ya es decir, porque es uno de mis batidos favoritos.",
@@ -22,7 +21,8 @@
       "tiempo": "30 minutos",
       "descripcionBreve": "Rico batido de oreo.",
       "ingredientes": "180 ml de Leche",
-      "instrucciones": "1. Batimos la leche y el helado, reservando un poco de leche. 2. Con la porción de leche que hemos apartado, rompemos las galletas (reservando un par de ellas)y las dejamos que se empapen bien. Así, se ablandarán y será mucho más fácil triturarlas. 3. Las unimos a la primera mezcla y batimos de nuevo. 4. Troceamos las dos galletas que hemos reservado y se las añadimos a nuestro batido."
+      "instrucciones": "1. Batimos la leche y el helado, reservando un poco de leche. 2. Con la porción de leche que hemos apartado, rompemos las galletas (reservando un par de ellas)y las dejamos que se empapen bien. Así, se ablandarán y será mucho más fácil triturarlas. 3. Las unimos a la primera mezcla y batimos de nuevo. 4. Troceamos las dos galletas que hemos reservado y se las añadimos a nuestro batido.",
+      "id": "b51e"
     },
     {
       "id": "f1bd",
