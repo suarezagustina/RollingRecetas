@@ -1,8 +1,25 @@
 import { Container, Table, Button } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import ItemRecetas from "./ItemRecetas";
+import ItemRecetas from "./receta/ItemRecetas";
+import { useEffect, useState } from "react";
+import { leeRecetaAPI } from "../../helpers/queries";
 
 const Creador = () => {
+const [recetas, setrecetas] = useState([]);
+
+useEffect(()=>{
+ traerecetas();
+},[]
+)
+
+const traerecetas = async()=>{
+  try {
+    await leeRecetaAPI()
+  } catch (error) {
+    console.log(error)
+  }
+}
+
     return (
         <>
         <Container className="mainPage">

@@ -13,16 +13,10 @@ const CardReceta = () => {
               <Card.Title className="colorPrincipal2 mb-0">
                Titulo de la receta
               </Card.Title>
-                <Card.Text className="fs-5">
-            <hr/>
+            <Card.Text className="fs-5">
             <Card.Text className="mb-0 cardText">
                 Descripcion breve de la receta
             </Card.Text>
-            <div className="d-flex mb-0">
-            <p className="colorPrincipal mt-0 mb-0 fs-5">Comensales: </p>
-            <p className="ms-1 mt-0 mb-0 fs-5">numero</p> 
-            </div>
-            <p className="colorPrincipal mt-0 mb-0 fs-5">Tiempo</p>
         </Card.Text>
 
 
