@@ -3,8 +3,26 @@ import bannerimg1 from "../../assets/bannerimg1.png"
 import bannerimg2 from "../../assets/bannerimg2.png"
 import bannerimg3 from "../../assets/bannerimg3.png"
 import CardReceta from './receta/CardReceta';
+import { useEffect, useState } from "react";
+import { leeRecetaAPI } from '../../helpers/queries';
 
 const Inicio = () => {
+
+  const [recetas, setrecetas] = useState ([]);
+
+  useEffect(()=>{
+   traerecetas();
+  },[])
+  
+  const traerecetas = async()=>{
+   try {
+    const listaRecetasAPI = await leeRecetaAPI()
+    setrecetas(listaRecetasAPI);
+   } catch (error) {
+    console.log(error)
+   }
+  }
+
     return (
         <>
           <Carousel>
@@ -22,10 +40,9 @@ const Inicio = () => {
         <Container className='mainPage mt-4 text-center'>
           <h1 className='text-center'>Subi o mira las recetas!!</h1>
        <Row>
-        <CardReceta></CardReceta>
-        <CardReceta></CardReceta>
-        <CardReceta></CardReceta>
-        <CardReceta></CardReceta>
+       {
+         recetas.map((receta)=><CardReceta key={receta.id} receta={receta}></CardReceta>)
+        }
        </Row>
         </Container>
         </section>
