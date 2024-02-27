@@ -14,7 +14,9 @@ useEffect(()=>{
 
 const traerecetas = async()=>{
   try {
-    await leeRecetaAPI()
+    const listaRecetasAPI =
+    await leeRecetaAPI();
+    setrecetas(listaRecetasAPI);
   } catch (error) {
     console.log(error)
   }
@@ -45,7 +47,9 @@ const traerecetas = async()=>{
     </tr>
   </thead>
   <tbody>
-  <ItemRecetas></ItemRecetas>
+  {
+    recetas.map((receta)=><ItemRecetas key={receta} receta={receta}></ItemRecetas>)
+  }
   </tbody>
 </Table>
         </Container>

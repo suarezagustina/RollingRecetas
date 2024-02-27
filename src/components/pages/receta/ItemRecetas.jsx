@@ -2,18 +2,18 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 
-const ItemRecetas = () => {
+const ItemRecetas = ({receta}) => {
     return (
         <>
     <tr>
-    <td>id</td>
-    <td>chocotorta</td>
-    <td>2 horas</td>
-    <td>5 comensales</td>
+    <td>{receta.id}</td>
+    <td>{receta.recetaTitulo}</td>
+    <td>{receta.tiempo}</td>
+    <td>{receta.comensales}</td>
     <td>
-        <img  className='img-fluid' width={250} src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/09/14170007/chocotorta-destacada.jpg" alt="" />
+        <img  className='img-fluid' width={250} src={receta.imagen} alt="imagen de {receta.recetaTitulo}" />
     </td>
-    <td>chocotorta rica</td>
+    <td>{receta.descripcionBreve} </td>
     <td className="text-center">
     <Link variant="warning" className="me-lg-2 btn btn-warning" to="/creador/editareceta">
           <i className="bi bi-pencil-square"></i>
