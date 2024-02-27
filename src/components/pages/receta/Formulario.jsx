@@ -1,56 +1,26 @@
 import { Container, Form, Button, FormControl } from "react-bootstrap";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { crearecetaAPI } from "../../../helpers/queries";
 
 const Formulario = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
-  const onSubmit = (receta) => {
+  const onSubmit = async(receta) => {
     console.log(receta);
-  };
-
-  const [formControls, setFormControls] = useState([]);
-
-  const agregarFormControl = () => {
-    setFormControls((prevFormControls) => [
-      ...prevFormControls,
-      <div id="botoning">
-        <FormControl
-          key={prevFormControls.length}
-          controlId="formIngrediente"
-
-          {
-            ...register("ingredientes", {
-            required: "Agregar el ingrediente es obligatorio",
-            minLength:{
-              value: 5,
-              message: "Debe ingresar como minimo 5 caracteres para un ingrediente"
-            },
-            maxLength:{
-              value: 40,
-              message: "Debe ingresar como maximo 40 caracteres para un ingrediente"
-            }
-            })
-          }
-      
-        />
-         <Form.Text className="text-danger">
-                {errors.ingredientes?.message}
-         </Form.Text>
-      </div>,
-    ]);
-  };
-
-  const eliminarFormControl = () => {
-    setFormControls((prevFormControls) => {
-      const newFormControls = [...prevFormControls];
-      newFormControls.pop();
-      return newFormControls;
-    });
+    const respuesta = await crearecetaAPI(receta);
+    if(respuesta.status === 201){
+      //mensaje
+      console.log("recetacreada")
+      reset();
+    }else{
+      console.log("error")
+    }
   };
 
   return (
@@ -243,8 +213,8 @@ const Formulario = () => {
                       message: "Debe ingresar como minimo 5 caracteres para una breve descripcion"
                     },
                     maxLength:{
-                      value: 50,
-                      message: "Debe ingresar como maximo 50 caracteres para una breve descripcion"
+                      value: 70,
+                      message: "Puede ingresar como maximo 70 caracteres para una breve descripcion"
                     }
                     })
                   }
@@ -271,8 +241,8 @@ const Formulario = () => {
                       message: "Debe ingresar como minimo 5 caracteres para un ingrediente"
                     },
                     maxLength:{
-                      value: 40,
-                      message: "Debe ingresar como maximo 40 caracteres para un ingrediente"
+                      value: 10000,
+                      message: "Debe ingresar como maximo 10000 caracteres para un ingrediente"
                     }
                     })
                   }
@@ -282,24 +252,6 @@ const Formulario = () => {
                 {errors.ingredientes?.message}
                 </Form.Text>
               </Form.Group>
-
-              <div>
-                {formControls}
-                <Button
-                  onClick={agregarFormControl}
-                  className="mt-3"
-                  variant="dark"
-                >
-                  Agregar Ingrediente
-                </Button>
-                <Button
-                  onClick={eliminarFormControl}
-                  className="ms-3 mt-3"
-                  variant="dark"
-                >
-                  Eliminar último ingrediente
-                </Button>
-              </div>
             </article>
 
             <article className="bgForm mx-2 mt-4">

@@ -1,30 +1,52 @@
 {
-    "recetas":[
-        {
-            "id":"1",
-            "recetaTitulo":"Chocotorta",
-            "tiempo": "30 minutos",
-            "comensales": 10,
-            "email": "persona1@gmail.com",
-            "acercaDeLaReceta": "La cocino siempre para mis hijos y disfrutamos en familia",
-            "descripcionBreve": "Postre clasico, sencillo y delicioso!",
-            "imagen": "https://i.pinimg.com/originals/95/3d/7d/953d7d917d53244f867db1e4991c2ec9.jpg",
-            "ingredientes": "2 paquetes de galletas de chocolate Chocolinas, 600 gramos de queso mascarpone, 600 g. de dulce de leche, 2 cucharadas de café soluble, 200 ml. de agua caliente, 100 g. de chocolate para decorar",
-            "intrucciones": "En un bowl mezclar el dulce de leche y el queso blanco hasta lograr una mezcla homogénea. En una fuente, preparar un café bien fuerte. Ir mojando las galletitas de chocolate una a la vez y disponerlas en un molde. Cubrir con una capa de la preparación dulce de leche y queso blanco. Seguir haciendo capas de galletitas hasta que no quede lugar en el molde. Llevar a la heladera durante por lo menos 4 horas."
-
-        },  
-        {
-            "id":"2",
-            "recetaTitulo":"Chocotorta",
-            "tiempo": "30 minutos",
-            "comensales": 10,
-            "email": "persona2@gmail.com",
-            "acercaDeLaReceta": "La cocino siempre para mis hijos y disfrutamos en familia",
-            "descripcionBreve": "Postre clasico, sencillo y delicioso!",
-            "imagen": "https://i.pinimg.com/originals/95/3d/7d/953d7d917d53244f867db1e4991c2ec9.jpg",
-            "ingredientes": "2 paquetes de galletas de chocolate Chocolinas, 600 gramos de queso mascarpone, 600 g. de dulce de leche, 2 cucharadas de café soluble, 200 ml. de agua caliente, 100 g. de chocolate para decorar",
-            "intrucciones": "En un bowl mezclar el dulce de leche y el queso blanco hasta lograr una mezcla homogénea. En una fuente, preparar un café bien fuerte. Ir mojando las galletitas de chocolate una a la vez y disponerlas en un molde. Cubrir con una capa de la preparación dulce de leche y queso blanco. Seguir haciendo capas de galletitas hasta que no quede lugar en el molde. Llevar a la heladera durante por lo menos 4 horas."
-
-        }
-    ]
+  "recetas": [
+    {
+      "id": "1",
+      "recetaTitulo": "Chocotorta",
+      "tiempo": "30 minutos",
+      "comensales": 10,
+      "email": "persona1@gmail.com",
+      "acercaDeLaReceta": "La cocino siempre para mis hijos y disfrutamos en familia",
+      "descripcionBreve": "Postre clasico, sencillo y delicioso!",
+      "imagen": "https://i.pinimg.com/originals/95/3d/7d/953d7d917d53244f867db1e4991c2ec9.jpg",
+      "ingredientes": "2 paquetes de galletas de chocolate Chocolinas, 600 gramos de queso mascarpone, 600 g. de dulce de leche, 2 cucharadas de café soluble, 200 ml. de agua caliente, 100 g. de chocolate para decorar",
+      "intrucciones": "En un bowl mezclar el dulce de leche y el queso blanco hasta lograr una mezcla homogénea. En una fuente, preparar un café bien fuerte. Ir mojando las galletitas de chocolate una a la vez y disponerlas en un molde. Cubrir con una capa de la preparación dulce de leche y queso blanco. Seguir haciendo capas de galletitas hasta que no quede lugar en el molde. Llevar a la heladera durante por lo menos 4 horas."
+    },
+    {
+      "id": "2",
+      "recetaTitulo": "Chocotorta",
+      "tiempo": "30 minutos",
+      "comensales": 10,
+      "email": "persona2@gmail.com",
+      "acercaDeLaReceta": "La cocino siempre para mis hijos y disfrutamos en familia",
+      "descripcionBreve": "Postre clasico, sencillo y delicioso!",
+      "imagen": "https://i.pinimg.com/originals/95/3d/7d/953d7d917d53244f867db1e4991c2ec9.jpg",
+      "ingredientes": "2 paquetes de galletas de chocolate Chocolinas, 600 gramos de queso mascarpone, 600 g. de dulce de leche, 2 cucharadas de café soluble, 200 ml. de agua caliente, 100 g. de chocolate para decorar",
+      "intrucciones": "En un bowl mezclar el dulce de leche y el queso blanco hasta lograr una mezcla homogénea. En una fuente, preparar un café bien fuerte. Ir mojando las galletitas de chocolate una a la vez y disponerlas en un molde. Cubrir con una capa de la preparación dulce de leche y queso blanco. Seguir haciendo capas de galletitas hasta que no quede lugar en el molde. Llevar a la heladera durante por lo menos 4 horas."
+    },
+    {
+      "id": "b51e",
+      "recetaTitulo": "Batido de Oreo",
+      "imagen": "https://bing.com/th?id=OSK.ee7f6ee820b8937b83062541328661d7",
+      "acercaDeLaReceta": "Este batido de Oreo no tiene rival. Incluso se permite competir con el batido de chocolate, que ya es decir, porque es uno de mis batidos favoritos.",
+      "email": "suarezagustina12.12@gmail.com",
+      "comensales": "1",
+      "tiempo": "30 minutos",
+      "descripcionBreve": "Rico batido de oreo.",
+      "ingredientes": "180 ml de Leche",
+      "instrucciones": "1. Batimos la leche y el helado, reservando un poco de leche. 2. Con la porción de leche que hemos apartado, rompemos las galletas (reservando un par de ellas)y las dejamos que se empapen bien. Así, se ablandarán y será mucho más fácil triturarlas. 3. Las unimos a la primera mezcla y batimos de nuevo. 4. Troceamos las dos galletas que hemos reservado y se las añadimos a nuestro batido."
+    },
+    {
+      "id": "f1bd",
+      "recetaTitulo": "Batido de fresa",
+      "imagen": "https://bing.com/th?id=OSK.148c9131c5d6f2a7faf91e252bc4445c",
+      "acercaDeLaReceta": "Solo necesita tres ingredientes y aseguramos que su textura y sabor lo convertirán en un básico de sus meriendas. Solo de imaginarlo acompañando a unas tortillas o medialunas ya suena casi a leyenda.",
+      "email": "posores83@gmail.com",
+      "comensales": "1",
+      "tiempo": "5 minutos",
+      "descripcionBreve": "La opción casera y mas rápida para disfrutar en familia",
+      "ingredientes": "Fresa 250 g. Nata líquida 100 ml. Azúcar 50 g",
+      "instrucciones": "Ponemos todos los ingredientes en un vaso de batidor de brazo o en un robot de cocina y trituramos todo a velocidad alta durante un minuto y servimos. Si queremos, podemos montar aparte un poco de nata líquida con unas varillas para decorar. En ese caso solo habrá que montar y colocar sobre el batido."
+    }
+  ]
 }
