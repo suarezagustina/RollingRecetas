@@ -8,6 +8,7 @@ import Error404 from './components/pages/Error404';
 import Formulario from './components/pages/receta/Formulario';
 import Creador from './components/pages/receta/Creador';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import DetalleReceta from './components/pages/receta/DetalleReceta';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <Route exact path='/creador' element={<Creador></Creador>}></Route>
     <Route exact path='/creador/editareceta' element={<Formulario></Formulario>}></Route>
     <Route exact path='/creador/creareceta' element={<Formulario></Formulario>}></Route>
+    <Route exact path='/detalleReceta' element={<DetalleReceta></DetalleReceta>}></Route>
     <Route exact path='/error404' element={<Error404></Error404>}></Route>
     <Route path='*' element={<Error404></Error404>}></Route>
    </Routes>

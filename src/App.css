@@ -33,3 +33,26 @@
 #botoning{
     margin-top: 20px;
 }
+.cardImagen {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+.colorPrincipal{
+    color: #5a422e;
+}
+.imagenCard{
+    object-fit: cover;
+    width: 250;
+    height: 200px;
+}
+.cardBody{
+    display: flex;
+    flex-direction: column;
+}
+.cardText{
+    flex-grow: 1;
+}
+.inicioBg{
+    background-color: #e0c1a9;
+}
