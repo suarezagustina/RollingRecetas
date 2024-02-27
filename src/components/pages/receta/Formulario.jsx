@@ -2,6 +2,7 @@ import { Container, Form, Button, FormControl } from "react-bootstrap";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { crearecetaAPI } from "../../../helpers/queries";
+import Swal from "sweetalert2";
 
 const Formulario = () => {
   const {
@@ -16,10 +17,20 @@ const Formulario = () => {
     const respuesta = await crearecetaAPI(receta);
     if(respuesta.status === 201){
       //mensaje
-      console.log("recetacreada")
+      Swal.fire({
+        title: "Receta creada!",
+        text:  `La Receta: ${receta.recetaTitulo} fue creada correctamente `,
+        icon: "success"
+      });
+      //console.log("recetacreada")
       reset();
     }else{
-      console.log("error")
+    //  console.log("error")
+    Swal.fire({
+      title: "Ocurrio un error",
+      text:  "Lo siento!. Ocurrio un error, intenta crear la receta en otro momento",
+      icon: "error"
+    });
     }
   };
 
@@ -213,8 +224,8 @@ const Formulario = () => {
                       message: "Debe ingresar como minimo 5 caracteres para una breve descripcion"
                     },
                     maxLength:{
-                      value: 70,
-                      message: "Puede ingresar como maximo 70 caracteres para una breve descripcion"
+                      value: 270,
+                      message: "Puede ingresar como maximo 270 caracteres para una breve descripcion"
                     }
                     })
                   }
