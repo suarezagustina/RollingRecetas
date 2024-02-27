@@ -1,5 +1,6 @@
 import { Container, Table, Button } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import ItemRecetas from "./ItemRecetas";
 
 const Creador = () => {
     return (
@@ -27,7 +28,7 @@ const Creador = () => {
     </tr>
   </thead>
   <tbody>
-  <p>bodycard</p>
+  <ItemRecetas></ItemRecetas>
   </tbody>
 </Table>
         </Container>
