@@ -51,12 +51,14 @@ const borrarReceta =()=>{
     </td>
     <td>{receta.descripcionBreve} </td>
     <td className="text-center">
-    <Link variant="warning" className="me-lg-2 btn btn-warning" to="/creador/editareceta">
+    <div className="d-flex">
+    <Link variant="warning" className="me-lg-2 btn btn-warning" to={`/creador/editareceta/${receta.id}`}>
           <i className="bi bi-pencil-square"></i>
     </Link>
     <Button className="mt-1 botonBorrar ms-3 bg-danger border-danger" onClick={borrarReceta}>
     <i class="bi bi-trash3 text-white"></i>
     </Button>
+    </div>
     </td>
   </tr>
         </>

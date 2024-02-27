@@ -41,3 +41,14 @@ try {
     console.log(error)
 }
 }
+//get d una receta
+export const obtenerRecetaAPI = async(id)=>{
+    try {
+        const respuesta = await fetch(`${URI_RECETAS}/${id}`);
+       // const recetaBuscada = await respuesta.json();
+       console.log(respuesta)
+        return respuesta;
+    } catch (error) {
+        console.log(error)
+    }
+}

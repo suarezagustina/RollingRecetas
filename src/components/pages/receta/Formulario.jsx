@@ -1,22 +1,55 @@
 import { Container, Form, Button, FormControl } from "react-bootstrap";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { crearecetaAPI } from "../../../helpers/queries";
+import { crearecetaAPI, obtenerRecetaAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
+import { useParams } from "react-router";
 
 const Formulario = ({editar, titulo}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
+    setValue
   } = useForm();
+  const {id} = useParams();
+
+  useEffect(()=>{
+    if(editar){
+  cargarDatosForm()
+    }
+  }
+  ,[])
+
+  const cargarDatosForm = async ()=>{
+    const respuesta = await obtenerRecetaAPI(id)
+  if(respuesta.status === 200){
+    const recetabuscada = await respuesta.json();
+    console.log(recetabuscada)
+    setValue("recetaTitulo", recetabuscada.recetaTitulo)
+    setValue("imagen", recetabuscada.imagen)
+    setValue("acercaDeLaReceta", recetabuscada.acercaDeLaReceta)
+    setValue("email", recetabuscada.email)
+    setValue("descripcionBreve", recetabuscada.descripcionBreve)
+    setValue("ingredientes", recetabuscada.ingredientes)
+    setValue("instrucciones", recetabuscada.instrucciones)
+    setValue("tiempo", recetabuscada.tiempo)
+    setValue("comensales", recetabuscada.comensales)
+  }else{
+    Swal.fire({
+      title: "Ocurrio un error",
+      text:  "Lo siento!. Ocurrio un error, intenta editar la receta en otro momento",
+      icon: "error"
+    });
+  }
+  }
 
   const onSubmit = async(receta) => {
     if(editar){
       //editar producto 
     }else{
-      console.log(receta);
+    //  console.log(receta);
       //CREAR
       const respuesta = await crearecetaAPI(receta);
       if(respuesta.status === 201){
