@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { crearecetaAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
 
-const Formulario = () => {
+const Formulario = ({editar, titulo}) => {
   const {
     register,
     handleSubmit,
@@ -13,32 +13,37 @@ const Formulario = () => {
   } = useForm();
 
   const onSubmit = async(receta) => {
-    console.log(receta);
-    const respuesta = await crearecetaAPI(receta);
-    if(respuesta.status === 201){
-      //mensaje
-      Swal.fire({
-        title: "Receta creada!",
-        text:  `La Receta: ${receta.recetaTitulo} fue creada correctamente `,
-        icon: "success"
-      });
-      //console.log("recetacreada")
-      reset();
+    if(editar){
+      //editar producto 
     }else{
-    //  console.log("error")
-    Swal.fire({
-      title: "Ocurrio un error",
-      text:  "Lo siento!. Ocurrio un error, intenta crear la receta en otro momento",
-      icon: "error"
-    });
+      console.log(receta);
+      //CREAR
+      const respuesta = await crearecetaAPI(receta);
+      if(respuesta.status === 201){
+        //mensaje
+        Swal.fire({
+          title: "Receta creada!",
+          text:  `La Receta: ${receta.recetaTitulo} fue creada correctamente `,
+          icon: "success"
+        });
+        //console.log("recetacreada")
+        reset();
+      }else{
+      //  console.log("error")
+      Swal.fire({
+        title: "Ocurrio un error",
+        text:  "Lo siento!. Ocurrio un error, intenta crear la receta en otro momento",
+        icon: "error"
+      });
+      }
+    };
     }
-  };
 
   return (
     <>
       <section>
         <Container className="mainPage">
-          <h2 className="display-5">Agrega Tu receta!!</h2>
+          <h2 className="display-5">{titulo}</h2>
           <hr />
           <Form onSubmit={handleSubmit(onSubmit)}>
             <article className="bgForm mx-2">
